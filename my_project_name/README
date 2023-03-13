@@ -1,0 +1,23 @@
+  symfony new my_project_name --full
+
+  symfony console make:controller
+
+  symfony console make:user
+
+  symfony console doctrine:database:create
+
+  symfony console make:migration
+
+  symfony console make:form (sur mon user)
+
+  symfony console make:auth (pour crée la page login)
+
+  composer require
+
+  composer require easycorp/easyadmin-bundle
+
+  symfony console make:admin:dashboard
+
+  symfony console make:admin:crud
+
+  

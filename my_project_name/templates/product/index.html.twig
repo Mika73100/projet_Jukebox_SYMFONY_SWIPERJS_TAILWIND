@@ -1,0 +1,59 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello Playlist!
+{% endblock %}
+
+
+{% block content %}
+	<body.cards>
+		<swiper-container class="mySwiper" effect="cards" grab-cursor="true">
+			{% for product in products %}
+				<swiper-slide>
+					<div class="max-w-sm rounded overflow-hidden shadow-lg">
+						<img class="w-full" src="/img/{{ product.illustration }}" alt="titre">
+						<div class="px-6 py-1">
+							<div class="font-bold text-xl mb-2">{{ product.title }}</div>
+							<div class="font-light text-xl mb-2">{{ product.subtitle }}&nbsp;
+
+											{% for favoris in product.favoris %}
+												{% if favoris.id == app.user.id %}
+														<a href="{{ path('suppfav',{'id': product.id})}}"><i class="fas fa-heart"></i></a>
+														{% else %}
+														<a href="{{ path('addFavoris',{'id': product.id})}}"><i class="far fa-heart"></i></a>
+														{% endif %}
+														{% else %}
+														<a href="{{ path('addFavoris',{'id': product.id})}}"><i class="far fa-heart"></i></a>
+											{% endfor %}
+												
+												
+														
+												
+											
+												
+											
+
+								<div class="font-bold text-xl mb-2 float-right">{{ product.category }}</div>
+							</div>
+							<p class="text-gray-400 text-xs ">
+								{{ product.description }}
+							</p>
+						</div>
+						<div class="px-4 py-1 mb-10">
+							<bouton>
+								<div>
+									<audio src="/sound/{{ product.sound }}" controls></audio>
+								</div>
+							</buton>
+						</div>
+					</div>
+				</swiper-slide>
+
+
+			{% endfor %}
+		</swiper-container>
+	</body>
+
+	<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"/>
+
+
+</div>{% endblock %}

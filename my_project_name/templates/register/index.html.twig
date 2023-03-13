@@ -1,0 +1,19 @@
+{% extends 'base.html.twig' %}
+
+
+{% block title %}Bienvenue dans Login{% endblock %}
+
+{% block content %}
+{{ form_start(form) }}
+     <div class="mb-6">
+            <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your email</label>
+            {{ form_widget(form.email, {'attr': {'class': 'block mb-2 text-sm font-medium text-black-900 dark:text-white','placeholder': 'email'}}) }}
+        </div>
+        <div class="mb-6">
+            <label for="password" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your password</label>
+            {{ form_widget(form.password, {'attr': {'class': 'block mb-2 text-sm font-medium text-black-900 dark:text-white','placeholder': 'email'}}) }}
+        </div>
+        <div class="mb-6">
+    <label for="repeat-password" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Repeat password</label>
+{{ form_end(form) }}
+{% endblock %}
