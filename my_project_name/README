@@ -1,3 +1,7 @@
+  PAS D'images / PAS de musique
+  
+  
+  
   symfony new my_project_name --full
 
   symfony console make:controller
