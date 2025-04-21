@@ -1,1 +1,10 @@
-Beethoven a créé la 5ème symphonie, mais vous, maîtrisez Symfony 5. Découvrez le potentiel de SF (Symfony) avec son appréhension ces derniers jours, prêt à composer un outil moderne pour gérer des playlists. Imaginez une interface SwiperJS pour choisir des musiques, un lecteur audio continu pendant la navigation, une animation vinyle avec pochettes changeantes. Catégorisez les musiques, permettez aux utilisateurs d'ajouter des favoris. Une interface futuriste, loin du kitsch des années 80, pour la SymfonyBox No 5.4. Bonne chance, jeune compositeur du numérique !
+## 🙌 Remerciements
+
+Merci d’avoir jeté un œil à ce projet !  
+
+<div align="center">
+⭐ N’hésite pas à forker, améliorer ou t’en inspirer ! ⭐  
+Bon code à toi 🚀
+
+⭐ Un petit like sur le repo fait toujours plaisir ! ⭐  
+</div>
